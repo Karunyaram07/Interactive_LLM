@@ -1,0 +1,149 @@
+# Metaprompts:
+#   - explanation: "Expands a prompt to include more detailed instructions and context."
+#     example_prompt: "Tell me about dogs."
+#     example_prompt_explanation: "This prompt is very vague and lacks context, making it ideal for expansion to guide the LLM more effectively."
+#     name: "Expand with details"
+#     template: |
+#       Expand this prompt to include more detailed instructions and context:
+
+#       {prompt}
+
+#       Add necessary details and context to guide the LLM towards a more comprehensive and targeted response.
+#   - explanation: "Improves a prompt based on specific feedback provided."
+#     example_prompt: "Describe the process of photosynthesis."
+#     example_prompt_explanation: "Feedback might suggest making the prompt more accessible for younger audiences or more detailed for academic use."
+#     name: "Apply feedback"
+#     template: |
+#       Improve the following prompt:
+
+#       {prompt}
+
+#       given this feedback:
+
+#       {feedback}
+#   - explanation: "Condenses a prompt to make it more succinct while retaining its essential request."
+#     example_prompt: "Write a funny joke that makes people laugh about something very funny. It should be hilarious."
+#     example_prompt_explanation: "This prompt can be condensed by removing redundant information"
+#     name: "Simply condense prompt"
+#     template: |
+#       Condense this prompt:
+
+#       {prompt}
+#   - explanation: "Improves a prompt to enhance clarity and effectiveness."
+#     example_prompt: "Tell me how to cook rice."
+#     example_prompt_explanation: "This prompt can be improved by specifying the type of cuisine or cooking method."
+#     name: "Simply improve prompt"
+#     template: |
+#       Improve this prompt:
+
+#       {prompt}
+#   - explanation: "Structures a prompt to guide the LLM through a series of sequential tasks."
+#     example_prompt: "Plan a birthday party."
+#     example_prompt_explanation: "This prompt can be structured to outline steps such as choosing a theme, preparing a guest list, and organizing activities."
+#     name: "Create sequential task list"
+#     template: |
+#       Structure this prompt to guide the LLM through a series of sequential tasks:
+
+#       {prompt}
+
+#       Organize the prompt so that it clearly outlines each step the LLM should take, ensuring a logical flow and comprehensive coverage of the tasks.
+#   - explanation: "Transforms a prompt to inspire creativity and elicit imaginative responses."
+#     example_prompt: "Write a story about a lost kitten."
+#     example_prompt_explanation: "The prompt can be revised to encourage more descriptive or emotional storytelling."
+#     name: "Elicit creative response"
+#     template: |
+#       Transform this prompt to elicit a creative response:
+
+#       {prompt}
+#   - explanation: "Adds a role to the prompt to improve the response"
+#     example_prompt: "Write a short song"
+#     example_prompt_explanation: "By adding an expert role, we can potentially improve the quality of the created song"
+#     name: "Add role prompting"
+#     template: |
+#       Add expert role prompting to the following prompt
+
+#       {prompt}
+
+#       Improved prompt:
+
+
+
+
+
+
+
+
+# Metaprompts:
+#   - name: "Problem Identification"
+#     explanation: "Helps the learner form a clear and meaningful question using zero-shot or one-shot prompts."
+#     template: |
+#       Reframe this question to make it clear and precise:
+#       {prompt}
+
+#   - name: "Exploration"
+#     explanation: "Encourages the learner to explore deeper using analogy or creative thinking."
+#     template: |
+#       Expand this concept using examples or analogies:
+#       {prompt}
+
+#   - name: "Application"
+#     explanation: "Encourages applying knowledge practically (e.g., examples or code)."
+#     template: |
+#       Apply this concept practically with a small task or example:
+#       {prompt}
+
+#   - name: "Reflection"
+#     explanation: "Promotes critical thinking by evaluating and comparing answers."
+#     template: |
+#       Reflect on this concept and identify improvements or missing points:
+#       {prompt}
+
+#   - name: "Learning Outcomes"
+#     explanation: "Summarizes key learnings and identifies next steps."
+#     template: |
+#       Summarize this topic briefly and suggest one follow-up learning goal:
+#       {prompt}
+
+
+
+
+Metaprompts:
+  - name: "Problem Identification"
+    explanation: "Helps the learner form a clear and meaningful question using zero-shot or one-shot prompts."
+    example_prompt: "Explain gradient descent."
+    example_prompt_explanation: "This is a basic and broad prompt that can be refined for clarity and purpose."
+    template: |
+      Reframe this question to make it clear and precise:
+      {prompt}
+
+  - name: "Exploration"
+    explanation: "Encourages the learner to explore deeper using analogy, examples, or creative thinking."
+    example_prompt: "Explain gradient descent step by step."
+    example_prompt_explanation: "Encourages deeper understanding through analogy and exploration prompts."
+    template: |
+      Expand this concept using examples or analogies:
+      {prompt}
+
+  - name: "Application"
+    explanation: "Promotes applying knowledge practically (for example, writing small code or solving a problem)."
+    example_prompt: "Write Python code to implement gradient descent for linear regression."
+    example_prompt_explanation: "Applies theoretical understanding into practical, executable examples."
+    template: |
+      Apply this concept practically with a small task or example:
+      {prompt}
+
+  - name: "Reflection"
+    explanation: "Encourages critical thinking by evaluating and comparing answers or outputs."
+    example_prompt: "Critique this explanation of gradient descent and point out missing details."
+    example_prompt_explanation: "Helps learners identify mistakes or incomplete reasoning through critique prompts."
+    template: |
+      Reflect on this concept and identify improvements or missing points:
+      {prompt}
+
+  - name: "Learning Outcomes"
+    explanation: "Summarizes key learnings and identifies the next step in the PEARL cycle."
+    example_prompt: "Summarize what you learned about gradient descent and how it relates to optimization."
+    example_prompt_explanation: "Supports students to consolidate learning and plan follow-up topics."
+    template: |
+      Summarize this topic briefly and suggest one follow-up learning goal:
+      {prompt}
