@@ -5,27 +5,26 @@ Problem Identification, Exploration, Application, Reflection, and Learning Outco
 
 It is built using Gradio, Hugging Face Inference API, and Meta-Llama 3.1-8B, providing a hands-on platform for prompt engineering pedagogy and AI-assisted learning.
 
-📂 Project Structure
 PromptLearn/
- └── prompt_teacher/
-      ├── src/
-      │    ├── .env                      # Hugging Face API Key stored here
-      │    ├── .gitignore                # Ignore files like venv/, __pycache__/
-      │    ├── README.md                 # Project documentation (this file)
-      │    ├── requirements.txt          # Dependencies list
-      │    ├── pyproject.toml            # Optional packaging info
-      │    └── prompt_teacher/
-      │         ├── __init__.py
-      │         ├── app.py               # Main Gradio application logic
-      │         ├── callbacks.py         # UI update + helper callbacks
-      │         ├── messages.py          # Default chatbot messages
-      │         ├── metaprompts.py       # Loads and validates PEARL stage prompts
-      │         ├── metaprompts.yml      # YAML file defining PEARL stages
-      │         ├── evaluator.py         # Optional similarity scoring logic
-      │         ├── robot.svg            # App favicon
-      │         ├── thinking.svg         # Optional loading animation
-      │         └── thumbnail.png        # App preview image
-      └── venv/ (optional virtual environment)
+└── prompt_teacher/
+├── src/
+│ ├── .env # Hugging Face API Key stored here
+│ ├── .gitignore # Ignore files like venv/, pycache/
+│ ├── README.md # Project documentation (this file)
+│ ├── requirements.txt # Dependencies list
+│ ├── pyproject.toml # Optional packaging info
+│ └── prompt_teacher/
+│ ├── init.py
+│ ├── app.py # Main Gradio application logic
+│ ├── callbacks.py # UI update + helper callbacks
+│ ├── messages.py # Default chatbot messages
+│ ├── metaprompts.py # Loads and validates PEARL stage prompts
+│ ├── metaprompts.yml # YAML file defining PEARL stages
+│ ├── evaluator.py # Optional similarity scoring logic
+│ ├── robot.svg # App favicon
+│ ├── thinking.svg # Optional loading animation
+│ └── thumbnail.png # App preview image
+└── venv/ # (optional virtual environment)
 
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
