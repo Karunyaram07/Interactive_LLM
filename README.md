@@ -1,8 +1,16 @@
+🧠 PromptLearn: AI-Based Interactive Teaching using PEARL
+
+
+
+
+
 <img width="822" height="507" alt="Structure" src="https://github.com/user-attachments/assets/059ea6d7-d19a-47ff-94fe-22ad9fa68c79" />
 
 
 
-🧠 PromptLearn: AI-Based Interactive Teaching using PEARL
+
+
+
 
 PromptLearn is an interactive AI teaching assistant that guides learners through the PEARL learning stages —
 Problem Identification, Exploration, Application, Reflection, and Learning Outcome.
