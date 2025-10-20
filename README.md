@@ -1,7 +1,14 @@
 🧠 PromptLearn: AI-Based Interactive Teaching using PEARL
+PromptLearn is an interactive AI teaching assistant that guides learners through the PEARL learning stages —
+Problem Identification, Exploration, Application, Reflection, and Learning Outcome.
+
+It is built using Gradio, Hugging Face Inference API, and Meta-Llama 3.1-8B, providing a hands-on platform for prompt engineering pedagogy and AI-assisted learning.
 
 
-
+⚙️ Setup Instructions
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/PromptLearn.git
+cd PromptLearn/prompt_teacher/src
 
 
 <img width="822" height="507" alt="Structure" src="https://github.com/user-attachments/assets/059ea6d7-d19a-47ff-94fe-22ad9fa68c79" />
@@ -10,19 +17,6 @@
 
 
 
-
-
-PromptLearn is an interactive AI teaching assistant that guides learners through the PEARL learning stages —
-Problem Identification, Exploration, Application, Reflection, and Learning Outcome.
-
-It is built using Gradio, Hugging Face Inference API, and Meta-Llama 3.1-8B, providing a hands-on platform for prompt engineering pedagogy and AI-assisted learning.
-
-
-
-⚙️ Setup Instructions
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/PromptLearn.git
-cd PromptLearn/prompt_teacher/src
 
 2️⃣ Create and Activate a Virtual Environment
 python -m venv venv
